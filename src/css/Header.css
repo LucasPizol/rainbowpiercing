@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  padding: 8px 7%;
+  display: flex;
+  align-items: center;
+  gap: 7%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.253);
+  position: fixed;
+  z-index: 9999999;
+  background-color: #fff;
+}
+
+.header-logo {
+  max-width: 70px;
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-title {
+  align-self: flex-start;
+  padding-top: 25px;
+  font-family: "Licorice", cursive;
+  font-size: 40pt;
+}
+
+@media(max-width: 410px) {
+  .header-title{
+    font-size: 30pt;
+  }
+}

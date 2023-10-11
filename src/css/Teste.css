@@ -1,0 +1,81 @@
+.personality-teste-grid {
+  display: grid;
+  align-items: flex-start;
+  justify-content: flex-start;
+  grid-template-areas: "text text text img img";
+  background-color: var(--primary-color);
+  width: 100%;
+  gap: 50px;
+  padding: 5% 7%;
+  background: linear-gradient(to right, black, rgba(255, 255, 255, 0)),
+    url("https://png.pngtree.com/thumb_back/fw800/background/20230605/pngtree-woman-with-piercings-and-tattoos-wearing-glasses-image_2875717.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+}
+
+.personality-teste-text {
+  min-height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: var(--font);
+  width: 100%;
+  grid-area: text;
+  gap: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.personality-teste-text h2 {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.personality-teste-text p {
+  font-size: 22pt;
+  color: white;
+  font-weight: 400;
+}
+
+.personality-teste-text button {
+  border-radius: 13px;
+  padding: 10px 0px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  font-family: var(--font);
+  color: white;
+  background-color: transparent;
+  font-size: 15pt;
+  border: 1px solid white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.personality-teste-text button:hover {
+  background-color: var(--primary-color);
+}
+
+.personality-teste-grid img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  grid-area: img;
+  object-position: left;
+}
+
+@media (max-width: 1200px) {
+  .personality-teste-grid {
+    grid-template-areas: "text img";
+  }
+}
+
+@media (max-width: 900px) {
+  .personality-teste-grid {
+    grid-template-areas: "text" "img";
+  }
+}
