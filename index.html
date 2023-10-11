@@ -12,26 +12,44 @@
     <link rel="stylesheet" href="./src/css/Section.css" />
     <link rel="stylesheet" href="./src/css/Slide.css" />
     <link rel="stylesheet" href="./src/css/Teste.css" />
+    <link rel="stylesheet" href="./src/css/Personalidade.css" />
+
     <link rel="icon" type="image/png" href="./src/images/rainbow-icon-2.png" />
-  </head> 
+
+    <script src="./src/js/index.js" defer></script>
+  </head>
   <body>
     <header class="header">
-      <img src="./src/images/rainbow-icon.png" class="header-logo" />
-      <h1 class="header-title">Rainbow Piercing</h1>
+      <div class="header-content">
+        <img src="./src/images/rainbow-icon.png" class="header-logo" />
+        <h1 class="header-title">Rainbow Piercing</h1>
+      </div>
+      <div class="header-nav">
+        <img class="expand-btn" src="./src/images/expand.svg" />
+        <nav>
+          <a href="#products">Fique ainda mais linda!</a>
+          <a>Cuidados com o Piercing</a>
+          <a>Teste de Personalidade</a>
+        </nav>
+      </div>
     </header>
     <div class="home-main-grid">
+      <h1 class="main-page-title">Navegação</h1>
+
       <div class="carousel-filter-grid">
-        <a href="#products" class="card cuidados-card">
-          <img src="./src/images/girl_with_piercing.jpg" />
+        <a href="#products" class="card aside-card">
           <p>Fique ainda mais linda!</p>
+
+          <img src="./src/images/girl_with_piercing.jpg" />
         </a>
         <div class="card aside-card">
-          <img src="./src/images/limpando.jpeg" />
           <p>Cuidados com o piercing</p>
+          <img src="./src/images/limpando.jpeg" />
         </div>
         <div class="card aside-card">
-          <img src="./src/images/personality-background.jfif" />
           <p>Teste de personalidade</p>
+
+          <img src="./src/images/personality-background.jfif" />
         </div>
       </div>
       <main class="personality-teste-grid">
@@ -86,6 +104,18 @@
             </div>
           </a>
         </section>
+        <main class="personalidade">
+          <img src="./src/images/personalidade.jpg" class="personalidade-img" />
+          <div class="personalidade-text">
+            <div class="personalidade-text-content">
+              <h2>Faça o teste de personalidade</h2>
+              <p>
+                Descubra qual o melhor piercing de acordo com sua personalidade
+              </p>
+            </div>
+            <button class="personalidade-text-button">FAZER TESTE</button>
+          </div>
+        </main>
       </main>
     </div>
     <footer class="footer">

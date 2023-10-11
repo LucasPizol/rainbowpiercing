@@ -6,20 +6,18 @@
     "limpando limpando algo"
     "limpando limpando outro";
   min-height: 650px;
-  padding: 60px 7%;
+  padding: 0 7%;
   gap: 15px;
-  padding-top: 20px;
-  margin-top: 130px;
-
+  padding-bottom: 60px;
 }
 
-.cuidados-card {
+.aside-card:nth-child(1) {
   grid-area: limpando;
-  background: linear-gradient(rgba(255, 255, 255, 0) 70%, var(--primary-color));
 }
 
 .cuidados-card p {
   padding: 30px;
+  z-index: 9999;
 }
 
 .card {
@@ -40,7 +38,6 @@
   transition: 0.5s;
   overflow: hidden;
   position: absolute;
-  z-index: -1;
 }
 
 .card:hover img {
@@ -66,6 +63,7 @@
   padding-right: 20px;
   padding-top: 3px;
   padding-bottom: 3px;
+  z-index: 9999;
 
   margin-bottom: 20px;
 }
@@ -77,6 +75,5 @@
 
   .carousel-filter-grid p {
     font-size: 15pt;
-
   }
 }

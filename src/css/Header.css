@@ -1,13 +1,69 @@
 .header {
   width: 100%;
-  padding: 8px 7%;
   display: flex;
   align-items: center;
-  gap: 7%;
+  justify-content: center;
   border-bottom: 1px solid rgba(128, 128, 128, 0.253);
   position: fixed;
   z-index: 9999999;
   background-color: #fff;
+  padding: 8px 7%;
+  gap: 15px;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: auto;
+  gap: 15px;
+  z-index: 1;
+  transition: 0.8s;
+}
+
+.header-nav {
+  transition: 0.5s;
+  font-family: var(--font);
+  opacity: 0;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.expand-btn {
+  display: none;
+  align-self: flex-end;
+  transition: 0.5s;
+}
+
+.header-nav nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.header-content.activeHeader {
+  transform: translateX(0);
+}
+
+.header-nav.activeHeader {
+  opacity: 1;
+}
+
+.header-nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  padding: 25px 5px;
+  font-size: 14pt;
+}
+
+.header-nav a:hover {
+  background-color: var(--primary-color);
 }
 
 .header-logo {
@@ -18,14 +74,58 @@
 }
 
 .header-title {
-  align-self: flex-start;
-  padding-top: 25px;
   font-family: "Licorice", cursive;
   font-size: 40pt;
+  padding-top: 6px;
 }
 
-@media(max-width: 410px) {
-  .header-title{
-    font-size: 30pt;
+.dropbtn {
+  text-align: end;
+}
+
+@media (max-width: 500px) {
+  .header-title {
+    font-size: 22pt;
+  }
+
+  .header-logo {
+    width: 50px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .expand-btn {
+    display: block;
+    width: 50px;
+  }
+  .header-nav {
+    transition: 0.5s;
+    font-family: var(--font);
+    opacity: 0;
+    display: inline-block;
+    flex: 0;
+  }
+
+  .header-nav nav {
+    position: absolute;
+    background-color: #ffffff;
+    top: 1;
+    width: 100%;
+    z-index: 1;
+    right: 0;
+    height: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    transition: 0.8s;
+  }
+
+  .expand-btn.activeNav {
+    transform: rotateX(180deg);
+  }
+
+  .header-nav nav.activeNav {
+    display: flex;
+    height: 300px;
   }
 }
