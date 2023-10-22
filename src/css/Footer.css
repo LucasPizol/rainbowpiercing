@@ -1,66 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 65px 7%;
-  background-color: var(--secondary-color);
-  width: 100%;
-  gap: 33px;
-  flex-wrap: wrap;
-  font-family: var(--font);
-}
-
-.footer-title {
-  font-size: 30pt;
-  color: white;
-}
-
-.footer-article-about-me h2 {
-  color: var(--primary-color);
-  font-weight: bold;
-  font-size: 20pt;
-  margin: 0;
-}
-
-.footer-article-about-me {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.footer-img {
-  max-width: 231px;
-  width: 100%;
-  flex: 1;
-  border-radius: 50%;
-}
-
-.about-me-info {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.about-me-info div:nth-child(1) {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.footer p {
+footer {
+  background: linear-gradient(to right, #9f77e9, #2b0568);
+  padding: 70px 0;
   color: #fff;
-  font-size: 18pt;
-  margin: 0;
 }
-
-.about-me-info article {
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 30px;
+}
+.footer-contact {
   display: flex;
-  align-items: center;
+  gap: 6px;
+}
+.footer-products-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    color: #d6bd30;
+  }
+  &:hover svg path {
+    fill: #d6bd30;
+  }
+}
+@media(max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-grid h2 {
+        font-size: 32px;
+    }
+
+    .footer-grid p, .footer-grid a {
+        font-size: 18px;
+    }
 }

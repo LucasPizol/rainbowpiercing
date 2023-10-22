@@ -1,0 +1,113 @@
+.catalogo-div {
+  background-color: rgb(240, 236, 253);
+  padding: 150px 0px;
+  width: 100%;
+  gap: 30px;
+}
+.catalogo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.catalogo-header p {
+  font-size: 18px;
+  color: rgb(66, 66, 66);
+}
+.catalogo-main-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 35px;
+  z-index: 5;
+  min-height: 350px;
+}
+.catalogo-div-card {
+  height: 100%;
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 40px 30px;
+  gap: 15px;
+  z-index: 5;
+  border: 1px solid #d6d6d6;
+  width: 100%;
+}
+.catalogo-card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex: 1;
+}
+.catalogo-div-card h2 {
+  font-size: 23px;
+  color: #25133f;
+  text-align: center;
+}
+.catalogo-div-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+}
+.catalogo-download {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #9b51e0;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 13px;
+  text-decoration: none;
+  color: #9b51e0;
+  font-weight: bold;
+  transition: 0.3s;
+  &:hover {
+    background-color: #9b51e0;
+    color: white;
+  }
+}
+@media (max-width: 1200px) {
+  .catalogo-div-card h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .catalogo-main-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .catalogo-main-card {
+    flex-direction: column;
+    
+  }
+}
+@media (max-width: 450px) {
+  .catalogo-main-card {
+    grid-template-columns: repeat(4, 1fr);
+    overflow: auto;
+    width: 93vw;
+    gap: 10px;
+  }
+  .catalogo-div-card {
+    min-width: 260px;
+    box-shadow: none;
+    border: 1px solid rgb(212, 212, 212);
+  }
+}
+@media (max-width: 310px) {
+  .catalogo-div-card {
+    min-width: 250px;
+  }
+}

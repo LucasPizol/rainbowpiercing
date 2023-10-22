@@ -1,131 +1,92 @@
 .header {
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.253);
-  position: fixed;
-  z-index: 9999999;
-  background-color: #fff;
-  padding: 8px 7%;
-  gap: 15px;
+  justify-content: space-between;
+  padding: 10px 0px;
 }
-
-.header-content {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: auto;
-  gap: 15px;
-  z-index: 1;
-  transition: 0.8s;
-}
-
-.header-nav {
-  transition: 0.5s;
-  font-family: var(--font);
-  opacity: 0;
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.expand-btn {
-  display: none;
-  align-self: flex-end;
-  transition: 0.5s;
-}
-
-.header-nav nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-}
-
-.header-content.activeHeader {
-  transform: translateX(0);
-}
-
-.header-nav.activeHeader {
-  opacity: 1;
-}
-
-.header-nav a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #000;
-  text-align: center;
-  padding: 25px 5px;
-  font-size: 14pt;
-}
-
-.header-nav a:hover {
-  background-color: var(--primary-color);
-}
-
 .header-logo {
-  max-width: 70px;
+  max-width: 90px;
   width: 100%;
-  border-radius: 50%;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.menu-hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+.menu-hamburger span {
+  display: block;
+  height: 2px;
+  border-radius: 20px;
+  background-color: rgb(209, 209, 209);
+  width: 20px;
+}
+.header-nav a {
+  color: white !important;
   cursor: pointer;
-}
-
-.header-title {
-  font-family: "Licorice", cursive;
-  font-size: 40pt;
-  padding-top: 6px;
-}
-
-.dropbtn {
-  text-align: end;
-}
-
-@media (max-width: 500px) {
-  .header-title {
-    font-size: 22pt;
-  }
-
-  .header-logo {
-    width: 50px;
+  font-size: 18px;
+  transition: 0.2s;
+  text-decoration: none;
+  &:hover {
+    color: #d6bd30 !important;
   }
 }
-
-@media (max-width: 1130px) {
-  .expand-btn {
-    display: block;
-    width: 50px;
+.header-nav a:last-child {
+  &:hover {
+    color: #fff;
+    transform: scale(1.03);
+  }
+}
+.instagram-icon {
+  max-width: 23px;
+}
+@media (max-width: 767px) {
+  .header {
+    position: relative;
+    justify-content: space-between;
+    padding: 10px 30px;
   }
   .header-nav {
-    transition: 0.5s;
-    font-family: var(--font);
-    opacity: 0;
-    display: inline-block;
-    flex: 0;
-  }
-
-  .header-nav nav {
-    position: absolute;
-    background-color: #ffffff;
-    top: 1;
-    width: 100%;
-    z-index: 1;
-    right: 0;
-    height: 0;
-    flex-direction: column;
-    align-items: flex-start;
+    height: 0px;
     overflow: hidden;
-    transition: 0.8s;
+    position: absolute;
+    transition: 0.5s;
+    top: 0;
+    z-index: 9999;
+    flex-direction: column;
+    width: 200px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    align-items: start;
+    justify-content: center;
+    padding: 0 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: translateY(70px) translateX(-30px);
+    border-radius: 7px;
   }
-
-  .expand-btn.activeNav {
-    transform: rotateX(180deg);
+  .header-nav a {
+    color: rgb(100, 100, 100) !important;
   }
-
-  .header-nav nav.activeNav {
+  .menu-hamburger {
     display: flex;
+  }
+  .header-nav.active {
+    padding: 25px 25px;
     height: 300px;
+    box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.493);
+  }
+.header-logo{
+    max-width: 60px;
+}
+  .header-nav svg path {
+    fill: #000;
   }
 }

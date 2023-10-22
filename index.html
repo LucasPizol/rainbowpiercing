@@ -4,147 +4,445 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rainbow Piercing</title>
-    <link rel="stylesheet" href="./src/css/App.css" />
-    <link rel="stylesheet" href="./src/css/Footer.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/Header.css" />
-    <link rel="stylesheet" href="./src/css/Home.css" />
-    <link rel="stylesheet" href="./src/css/index.css" />
-    <link rel="stylesheet" href="./src/css/Section.css" />
-    <link rel="stylesheet" href="./src/css/Slide.css" />
-    <link rel="stylesheet" href="./src/css/Teste.css" />
-    <link rel="stylesheet" href="./src/css/Personalidade.css" />
-
-    <link rel="icon" type="image/png" href="./src/images/rainbow-icon-2.png" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/MainContainer.css" />
+    <link rel="stylesheet" href="./src/css/MainGridContent.css" />
+    <link rel="stylesheet" href="./src/css/CardsSection.css" />
+    <link rel="stylesheet" href="./src/css/Feedbacks.css" />
+    <link rel="stylesheet" href="./src/css/AboutMe.css" />
+    <link rel="stylesheet" href="./src/css/CatalogoSection.css" />
+    <link rel="stylesheet" href="./src/css/Footer.css" />
+    <link rel="stylesheet" href="./src/css/DescriptionSection.css" />
+    <link rel="stylesheet" href="./src/css/Liberte.css" />
+    <link rel="stylesheet" href="./src/css/variaveis.css" />
+    <link rel="icon" type="image/png" href="./src/images/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
     <script src="./src/js/index.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header-content">
-        <img src="./src/images/rainbow-icon.png" class="header-logo" />
-        <h1 class="header-title">Rainbow Piercing</h1>
+    <main class="main-container">
+      <div class="container" data-aos="fade" data-aos-duration="1000">
+        <header class="header">
+          <img
+            src="./src/images/favicon.png"
+            alt="iconeRainbow"
+            class="header-logo"
+          />
+          <div class="menu-hamburger">
+            <span></span><span></span><span></span>
+          </div>
+          <nav class="header-nav">
+            <a href="#catalogo">Catálogo</a>
+            <a href="#feedbacks">Feedbacks</a>
+            <a href="#about-me">Sobre mim</a>
+            <a href="#footer">Contato</a>
+            <a href="https://www.instagram.com/rainbowpiercing04">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="#fff"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"
+                ></path>
+              </svg>
+            </a>
+          </nav>
+        </header>
+        <main class="w-100 d-flex justify-content-between main-grid-content">
+          <div
+            class="d-flex flex-column justify-content-center gap-3 main-content-left"
+          >
+            <h1 class="main-content-title">RAINBOW PIERCING</h1>
+            <p class="main-content-paragraph">
+              Especializada em realçar sua beleza com joias de qualidade
+            </p>
+            <a
+              class="main-content-cta"
+              href="https://www.instagram.com/rainbowpiercing04"
+              target="_blank"
+              >Compre já!</a
+            >
+          </div>
+          <img
+            src="./src/images/woman-1293796_19a20-removebg-preview.png"
+            alt="mainPageImage"
+            class="main-page-image"
+          />
+        </main>
       </div>
-      <div class="header-nav">
-        <img class="expand-btn" src="./src/images/expand.svg" />
-        <nav>
-          <a href="#products">Fique ainda mais linda!</a>
-          <a>Cuidados com o Piercing</a>
-          <a>Teste de Personalidade</a>
-        </nav>
-      </div>
-    </header>
-    <div class="home-main-grid">
-      <h1 class="main-page-title">Navegação</h1>
-
-      <div class="carousel-filter-grid">
-        <a href="#products" class="card aside-card">
-          <p>Fique ainda mais linda!</p>
-
-          <img src="./src/images/girl_with_piercing.jpg" />
-        </a>
-        <div class="card aside-card">
-          <p>Cuidados com o piercing</p>
-          <img src="./src/images/limpando.jpeg" />
-        </div>
-        <div class="card aside-card">
-          <p>Teste de personalidade</p>
-
-          <img src="./src/images/personality-background.jfif" />
-        </div>
-      </div>
-      <main class="personality-teste-grid">
-        <div class="personality-teste-text">
-          <div>
-            <h2>Irradie sua beleza!</h2>
+      <div class="container">
+        <main class="main-card">
+          <div class="div-card">
+            <img src="./src/images/heart.svg" class="card-image" />
+            <h2>Apaixonada</h2>
             <p>
-              Os Piercings da Rainbow Piercing conta com altíssima qualidade e
-              perfeitos para aumentar ainda mais o quão linda(o) você é!
+              Sou apaixonada no que faço! Além do produto, o cuidado na
+              preparação da entrega é excepcional!
             </p>
           </div>
-        </div>
-      </main>
-      <main class="products" id="products">
-        <h1>Acesse nosso catálogo</h1>
-        <section class="products-content">
-          <a href="./src/files/Titanio (Labret e Argolas).pdf" download>
-            <img src="./src/images/titanium.jfif" />
-            <div class="div-gradient"></div>
-            <div class="info">
-              <p>Titânio (Labret, Argolas)</p>
-              <p>DOWNLOAD</p>
-            </div>
-          </a>
-          <a href="./src/files/Umbigo e Nariz.pdf" download>
-            <img src="./src/images/piercing_umbigo_2.jpg" />
-            <div class="div-gradient"></div>
-            <div class="info">
-              <p>Umbigo e Nariz</p>
-              <p>DOWNLOAD</p>
-            </div>
-          </a>
-          <a
-            href="./src/files/Curvo, Transversal, Mamilo, Lingua e Micro.pdf"
-            download
-          >
-            <img src="./src/images/piercing_lingua.jpg" />
-            <div class="div-gradient"></div>
-
-            <div class="info">
-              <p>Curvo, Transversal, Mamilo, Lingua e Micro</p>
-              <p>DOWNLOAD</p>
-            </div>
-          </a>
-          <a href="./src/files/Aço cirúrgico e Prata 925.pdf" download>
-            <img src="./src/images/aco_cirurgico.jfif" />
-            <div class="div-gradient"></div>
-
-            <div class="info">
-              <p>Aço Cirúrcico e Prata 925</p>
-              <p>DOWNLOAD</p>
-            </div>
-          </a>
-        </section>
-        <main class="personalidade">
-          <img src="./src/images/personalidade.jpg" class="personalidade-img" />
-          <div class="personalidade-text">
-            <div class="personalidade-text-content">
-              <h2>Faça o teste de personalidade</h2>
-              <p>
-                Descubra qual o melhor piercing de acordo com sua personalidade
-              </p>
-            </div>
-            <button class="personalidade-text-button">FAZER TESTE</button>
+          <div class="div-card">
+            <img src="./src/images/like.svg" class="card-image" />
+            <h2>Profissionalismo</h2>
+            <p>
+              Sou uma ótima profissional. Busco entregar tudo com qualidade,
+              cuidado e perfeição.
+            </p>
+          </div>
+          <div class="div-card">
+            <img src="./src/images/warranty-term.svg" class="card-image" />
+            <h2>Garantia</h2>
+            <p>
+              Cubrimos garantia sob defeito de fábrica. Materiais como titânio e
+              Prata 925 têm garantias vitalícias!
+            </p>
           </div>
         </main>
-      </main>
-    </div>
-    <footer class="footer">
-      <h2 class="footer-title">SOBRE MIM</h2>
-      <div class="footer-article-about-me">
-        <img class="footer-img" src="./src/images/img_iris.jpg" />
-        <div class="about-me-info">
-          <div>
+      </div>
+      <div class="separator"></div>
+    </main>
+    <main class="catalogo-div" id="catalogo">
+      <div class="container">
+        <div class="catalogo-header">
+          <h1>Catálogo</h1>
+          <p>Acesse nosso catálogo preparado com bastante carinho!</p>
+        </div>
+        <div class="catalogo-main-card">
+          <div
+            class="catalogo-div-card"
+            data-aos="zoom-in-left"
+            data-aos-duration="200"
+          >
+            <img
+              src="https://cdn.awsli.com.br/600x450/513/513979/produto/218406826/00f20e6f-ff22-4d89-9cd7-31783c0cb276-b7vv8bfw46.jpeg"
+              class="catalogo-card-image"
+            />
+            <div class="catalogo-div-info">
+              <h2>Titânio (Labret e Argolas)</h2>
+              <a
+                class="catalogo-download"
+                href="./src/files/Titanio (Labret e Argolas).pdf"
+                download
+                >BAIXAR</a
+              >
+            </div>
+          </div>
+          <div
+            class="catalogo-div-card"
+            data-aos="zoom-in-left"
+            data-aos-duration="400"
+          >
+            <img
+              src="./src/images/piercing_umbigo.jpg"
+              class="catalogo-card-image"
+            />
+            <div class="catalogo-div-info">
+              <h2>Umbigo e Nariz</h2>
+              <a
+                class="catalogo-download"
+                href="./src/files/Umbigo e Nariz.pdf"
+                download
+                >BAIXAR</a
+              >
+            </div>
+          </div>
+          <div
+            class="catalogo-div-card"
+            data-aos="zoom-in-left"
+            data-aos-duration="600"
+          >
+            <img
+              src="./src/images/piercing_lingua.jpg"
+              class="catalogo-card-image"
+            />
+            <div class="catalogo-div-info">
+              <h2>Curvo, Transversal, Mamilo, Lingua e Micro</h2>
+              <a
+                class="catalogo-download"
+                href="./src/files/Curvo, Transversal, Mamilo, Lingua e Micro.pdf"
+                download
+                >BAIXAR</a
+              >
+            </div>
+          </div>
+          <div
+            class="catalogo-div-card"
+            data-aos="zoom-in-left"
+            data-aos-duration="800"
+          >
+            <img src="./src/images/prata_aço.png" class="catalogo-card-image" />
+            <div class="catalogo-div-info">
+              <h2>Aço Cirúrgico e Prata 925</h2>
+              <a
+                class="catalogo-download"
+                href="./src/files/Aço cirúrgico e Prata 925.pdf"
+                download
+                >BAIXAR</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <main class="descriptions-section">
+      <div class="container article-div">
+        <article
+          class="article-description"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <div class="article-description-info">
+            <h2>Os melhores piercings para ressaltar sua beleza</h2>
             <p>
-              Meu nome é Íris, atualmente curso publicidade e propaganda. Sou
-              especializada na venda de piercings para te embelezar ainda mais.
-              Iniciei minha loja em 2021, após vender algumas coisas de minha
-              casa e adquirir este gosto em promover soluções e felicidade para
-              as pessoas
+              Com uma coleção diversificada de joias de alta qualidade, desde
+              piercings tradicionais a designs únicos e modernos, nossa missão é
+              ajudá-lo a expressar sua individualidade de forma criativa e
+              segura.
             </p>
           </div>
-          <div>
-            <h2>CONTATO</h2>
-            <article>
-              <img src="./src/images/instagram-logo.png" />
-              <p>@rainbowpiercing04</p>
-            </article>
-            <article>
-              <img src="./src/images/whatsapp-logo.png"" />
-              <p>(35) 99942-2529</p>
-            </article>
+          <img
+            src="./src/images/description_img_1.png"
+            alt="IMAGEM COM VÁRIOS PIERCINGS"
+          />
+        </article>
+        <article
+          class="article-description"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <img
+            src="./src/images/description_img_2.png"
+            alt="IMAGEM COM VÁRIOS PIERCINGS"
+          />
+          <div class="article-description-info">
+            <h2>Descubra Sua Jornada de Autoexpressão a Rainbow Piercing</h2>
+            <p>
+              Nossa portfólio de piercings é um tributo à diversidade e
+              individualidade, oferecendo uma ampla gama de opções para você
+              expressar sua personalidade única.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <main class="liberte">
+      <div
+        class="container liberte-grid"
+        data-aos="fade"
+        data-aos-duration="700"
+      >
+        <div class="liberte-info">
+          <h2>Liberte sua força, a Rainbow pode te ajudar!</h2>
+          <p>
+            Explore o Mundo Colorido dos Piercings na Rainbow Piercing! Nossa
+            paixão pelo autodesenvolvimento e pela autenticidade brilha em nossa
+            coleção de piercings exclusivos.
+          </p>
+          <a
+            class="main-content-cta"
+            href="https://www.instagram.com/rainbowpiercing04"
+            target="_blank"
+            >Compre já!</a
+          >
+        </div>
+        <img src="./src/images/imagem_liberte.png" />
+      </div>
+    </main>
+    <main class="feedbacks-and-about-me" id="feedbacks">
+      <div class="container feedbacks-container">
+        <div class="feedback-header">
+          <h1>
+            Feedbacks de
+            <span
+              >Clientes<svg
+                fill="#7F60AB"
+                height="800px"
+                width="800px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 490.1 490.1"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M201.9,21.018c-18.6,13.6-28,36.9-28,69v76.2H68.3c-37.6,0-68.3,30.6-68.3,68.3v2.1c0,0.6,0.1,1.3,0.2,1.9l28.1,176.5
+      c5.2,42.4,34.8,66.8,81.1,66.8h209.2c37.6,0,68.3-30.6,68.3-68.3v-196.1c0-5.9,4.8-10.7,10.7-10.7h57.3c5.9,0,10.7,4.8,10.7,10.7
+      v207.9c0,5.9-4.8,10.7-10.7,10.7h-33.1c-6.8,0-12.3,5.5-12.3,12.3s5.5,12.3,12.3,12.3h33.1c19.4,0,35.2-15.8,35.2-35.2v-208
+      c0-19.4-15.8-35.2-35.2-35.2h-57.3c-13.8,0-25.8,8-31.6,19.6c-0.8-0.5-1.7-0.8-2.7-1.1c-3.3-0.9-81.4-23.8-81.4-91.2v-85.6
+      c0-5.4-3.5-10.1-8.6-11.7C271.7,11.718,231.3-0.582,201.9,21.018z M356.8,224.218c1.9,0.5,3.8,0.6,5.6,0.2v189.1
+      c0,24.1-19.6,43.8-43.8,43.8h-66.4H109.4c-34,0-53.1-15.2-56.9-45.7l-28-176v-1.1c0-24.1,19.6-43.8,43.8-43.8h117.9
+      c6.8,0,12.3-5.5,12.3-12.3v-88.4c0-23.9,6-40.4,17.9-49.2c12.9-9.6,30.7-8.7,41.1-7v75.6
+      C257.5,195.418,352.7,223.118,356.8,224.218z"
+                  />
+                </g></svg
+            ></span>
+          </h1>
+          <img src="./src/images/5_stars.png" />
+        </div>
+
+        <div class="feedbacks-content">
+          <div class="img-div" data-aos="zoom-in-down" data-aos-delay="200">
+            <img
+              src="./src/images/feedback_1.png"
+              alt="IMAGEM DE CLIENTE DANDO FEEDBACK"
+              class="feedback-img"
+            />
+          </div>
+          <div class="img-div" data-aos="zoom-in-down" data-aos-delay="200">
+            <img
+              src="./src/images/feedback_2.png"
+              alt="IMAGEM DE CLIENTE DANDO FEEDBACK"
+              class="feedback-img"
+            />
+          </div>
+          <div class="img-div" data-aos="zoom-in-down" data-aos-delay="200">
+            <img
+              src="./src/images/feedback_3.png"
+              alt="IMAGEM DE CLIENTE DANDO FEEDBACK"
+              class="feedback-img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container about-me" id="about-me">
+        <div class="about-me-info" data-aos="zoom-in-down">
+          <h2>
+            Sobre mim
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 350 350"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587
+             C104.535,132.855,136.084,171.173,175,171.173z"
+                />
+                <path
+                  d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z"
+                />
+                <path
+                  d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z"
+                />
+                <path
+                  d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761
+             s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131
+             c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496
+             c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z"
+                />
+              </g>
+            </svg>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            neque recusandae placeat tenetur? Consequatur ducimus fugit autem
+            nostrum illum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+            ducimus
+          </p>
+        </div>
+        <img src="./src/images/img_iris.jpg" alt="Imagem Íris" />
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="container footer-grid">
+        <div class="footer-content">
+          <h2>Contato</h2>
+          <p>Me chame pelo Whatsapp ou Instagram!</p>
+          <a
+            class="footer-contact"
+            href="https://www.instagram.com/rainbowpiercing04"
+            target="_blank"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#fff"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"
+              ></path>
+            </svg>
+            <p>rainbowpiercing04</p>
+          </a>
+          <a
+            class="footer-contact"
+            href="https://web.whatsapp.com/send/?phone=5535999422529"
+            target="_blank"
+          >
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="#fffff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.6 6.31999C16.8669 5.58141 15.9943 4.99596 15.033 4.59767C14.0716 4.19938 13.0406 3.99622 12 3.99999C10.6089 4.00135 9.24248 4.36819 8.03771 5.06377C6.83294 5.75935 5.83208 6.75926 5.13534 7.96335C4.4386 9.16745 4.07046 10.5335 4.06776 11.9246C4.06507 13.3158 4.42793 14.6832 5.12 15.89L4 20L8.2 18.9C9.35975 19.5452 10.6629 19.8891 11.99 19.9C14.0997 19.9001 16.124 19.0668 17.6222 17.5816C19.1205 16.0965 19.9715 14.0796 19.99 11.97C19.983 10.9173 19.7682 9.87634 19.3581 8.9068C18.948 7.93725 18.3505 7.05819 17.6 6.31999ZM12 18.53C10.8177 18.5308 9.65701 18.213 8.64 17.61L8.4 17.46L5.91 18.12L6.57 15.69L6.41 15.44C5.55925 14.0667 5.24174 12.429 5.51762 10.8372C5.7935 9.24545 6.64361 7.81015 7.9069 6.80322C9.1702 5.79628 10.7589 5.28765 12.3721 5.37368C13.9853 5.4597 15.511 6.13441 16.66 7.26999C17.916 8.49818 18.635 10.1735 18.66 11.93C18.6442 13.6859 17.9355 15.3645 16.6882 16.6006C15.441 17.8366 13.756 18.5301 12 18.53ZM15.61 13.59C15.41 13.49 14.44 13.01 14.26 12.95C14.08 12.89 13.94 12.85 13.81 13.05C13.6144 13.3181 13.404 13.5751 13.18 13.82C13.07 13.96 12.95 13.97 12.75 13.82C11.6097 13.3694 10.6597 12.5394 10.06 11.47C9.85 11.12 10.26 11.14 10.64 10.39C10.6681 10.3359 10.6827 10.2759 10.6827 10.215C10.6827 10.1541 10.6681 10.0941 10.64 10.04C10.64 9.93999 10.19 8.95999 10.03 8.56999C9.87 8.17999 9.71 8.23999 9.58 8.22999H9.19C9.08895 8.23154 8.9894 8.25465 8.898 8.29776C8.8066 8.34087 8.72546 8.403 8.66 8.47999C8.43562 8.69817 8.26061 8.96191 8.14676 9.25343C8.03291 9.54495 7.98287 9.85749 8 10.17C8.0627 10.9181 8.34443 11.6311 8.81 12.22C9.6622 13.4958 10.8301 14.5293 12.2 15.22C12.9185 15.6394 13.7535 15.8148 14.58 15.72C14.8552 15.6654 15.1159 15.5535 15.345 15.3915C15.5742 15.2296 15.7667 15.0212 15.91 14.78C16.0428 14.4856 16.0846 14.1583 16.03 13.84C15.94 13.74 15.81 13.69 15.61 13.59Z"
+                fill="#ffffff"
+              />
+            </svg>
+            <p>(35) 9 9942-2529</p>
+          </a>
+        </div>
+        <div class="footer-content">
+          <h2>Produtos</h2>
+          <div class="footer-products-links">
+            <a href="./src/files/Titanio (Labret e Argolas).pdf"
+              >Titânio (Labret e Argolas)</a
+            >
+            <a href="./src/files/Umbigo e Nariz.pdf">Umbigo e Nariz</a>
+            <a href="./src/files/Curvo, Transversal, Mamilo, Lingua e Micro.pdf"
+              >Curvo, Transversal, Mamilo, Lingua e Micro</a
+            >
+            <a href="./src/files/Aço cirúrgico e Prata 925.pdf"
+              >Aço Cirúrgico e Prata 925
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h2>Menu Rápido</h2>
+          <div class="footer-products-links">
+            <a href="#catalogo">Catálogo</a>
+            <a href="#feedbacks">Feedbacks</a>
+            <a href="#about-me">Sobre mim</a>
+            <a href="#footer">Contato</a>
           </div>
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
