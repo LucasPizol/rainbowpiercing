@@ -6,3 +6,5 @@ AOS.init();
 menu.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
+
+console.log('Iniciando')
